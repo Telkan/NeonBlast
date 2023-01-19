@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://BadGuys/Ranged/Archer/Archer.gd" type="Script" id=1]
+[ext_resource path="res://BadGuys/Ranged/Ranged/Ranged.tscn" type="PackedScene" id=2]
+[ext_resource path="res://BadGuys/Ranged/Archer/Archer.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 5, 7 )
+
+[node name="Archer" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" parent="HurtDetection" index="0"]
+position = Vector2( 0, 1 )
+shape = SubResource( 1 )
