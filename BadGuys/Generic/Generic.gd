@@ -26,6 +26,7 @@ func getHurt(dmg:int):
 		die()
 	else:
 		hit(dmg) #hit feedback
+		$HealthBar.resizeHealth()
 		
 func die():
 	queue_free()

@@ -15,12 +15,18 @@ _global_script_classes=[ {
 "path": "res://BadGuys/Generic/Generic.gd"
 }, {
 "base": "Enemy",
+"class": "Melee",
+"language": "GDScript",
+"path": "res://BadGuys/Melee/Melee/Melee.gd"
+}, {
+"base": "Enemy",
 "class": "Ranged",
 "language": "GDScript",
 "path": "res://BadGuys/Ranged/Ranged/Ranged.gd"
 } ]
 _global_script_class_icons={
 "Enemy": "",
+"Melee": "",
 "Ranged": ""
 }
 
@@ -97,6 +103,12 @@ right={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777233,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+dash={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":88,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
 

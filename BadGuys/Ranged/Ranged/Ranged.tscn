@@ -5,6 +5,11 @@
 
 [node name="Ranged" instance=ExtResource( 2 )]
 script = ExtResource( 1 )
-spawnDistance = 300
+spawnDistance = 210
+
+[node name="HealthBar" parent="." index="5"]
+__meta__ = {
+"_edit_group_": true
+}
 
 [connection signal="timeout" from="CooldownTimer" to="." method="_on_CooldownTimer_timeout"]

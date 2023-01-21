@@ -6,7 +6,7 @@ class_name Ranged
 # var b = "text"
 var rng = RandomNumberGenerator.new()
 var bulletSpeed
-export var spawnDistance = 300
+export var spawnDistance = 210
 
 func _ready():
 	rng.randomize()
@@ -14,7 +14,7 @@ func _ready():
 	var position := Vector2(spawnDistance*cos(angle),spawnDistance*sin(angle))
 	global_position = position
 	
-func shoot(direction : Vector2):
+func shoot(_direction : Vector2):
 	print("lmao c'est ranged")
 
 func _on_CooldownTimer_timeout():

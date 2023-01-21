@@ -2,7 +2,7 @@ extends Node2D
 
 export var spawnPoints := 5
 export var pointIncrease := 2
-var enemies : Array = [preload("res://BadGuys/Ranged/Archer/Archer.tscn")] 
+var enemies : Array = [preload("res://BadGuys/Ranged/Archer/Archer.tscn"),preload("res://BadGuys/Melee/Soldier/Soldier.tscn")] 
 
 onready var enemyCost = fillCost()
 
