@@ -3,7 +3,7 @@ extends Node2D
 var direction : Vector2
 var speed : float
 var damage : int
-
+var deathPart = preload("res://BadGuys/Ranged/Ranged/Bullet/DeathParticles.tscn")
 func _ready():
 	$Sprite.rotation = direction.angle()
 	$Timer.start()
@@ -24,5 +24,11 @@ func _on_Timer_timeout():
 
 
 func _on_HitSomething_body_entered(_body):
+	var part = deathPart.instance()
+	part.position = global_position
+	part.rotation = $Sprite.rotation
+	get_parent().add_child(part)
 	queue_free()
 	pass # Replace with function body.
+
+

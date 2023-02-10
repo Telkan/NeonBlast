@@ -13,5 +13,4 @@ func _ready():
 
 func playHurt():
 	if(!self.playing):
-		self.stream = load("res://Player/SoundEffects/"+str(rng.randi_range(1,3))+".wav")
 		play()

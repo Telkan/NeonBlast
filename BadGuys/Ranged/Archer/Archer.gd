@@ -9,10 +9,11 @@ var arrow = preload("res://BadGuys/Ranged/Archer/Arrow.tscn")
 
 func _init():
 	attackSpeed = 2
-	hp = 2
+	hp = 3
 	spawnCost = 1
 	damage = 1
-	bulletSpeed = 80
+	bulletSpeed = 200
+	scorePoints = 1000
 
 func shoot(direction : Vector2):
 	var newArrow = arrow.instance()

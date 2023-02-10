@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://BadGuys/Ranged/Ranged/Bullet/DeathParticles.gd" type="Script" id=1]
+
+[sub_resource type="ParticlesMaterial" id=1]
+lifetime_randomness = 1.0
+flag_disable_z = true
+spread = 25.03
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 431.45
+initial_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+damping = 70.27
+angle = 576.2
+angle_random = 1.0
+scale = 4.78
+scale_random = 1.0
+color = Color( 1, 0.909804, 0.109804, 1 )
+
+[node name="Particles2D" type="Particles2D"]
+modulate = Color( 45.08, 41.86, 1.11, 1 )
+emitting = false
+amount = 26
+lifetime = 0.24
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource( 1 )
+script = ExtResource( 1 )
